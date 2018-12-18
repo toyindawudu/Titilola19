@@ -1,8 +1,14 @@
 @import "./Abstracts/_functions";
+@import "./Abstracts/_mixins";
+@import "./Abstracts/_variables";
+
+
 @import "./Base/animations";
 @import "./Base/base";
 @import "./Base/typography";
 @import "./Base/utilities";
+
+@import "./Pages/_home.scss/";
 
 $color-primary:#55c57a;
 $color-secondary:#7ed56f;
@@ -45,6 +51,8 @@ body {
   color: $color-white;
   border: solid .1rem black;
 
+  // clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+
   &__text-box {
     position: absolute;
     top: 20%;
@@ -70,22 +78,6 @@ body {
   animation-name: moveInRight;
   animation-duration: 3s;
 }
-
-
-// .btn {
-//   font-size: 1.5rem;
-//   text-transform: uppercase;
-//   opacity: .8;
-//   border-radius: 5rem;
-//   padding: 2px; 
-//   display: block;
-//   height: 50px;
-//   width: 300px;
-//   margin: 20px 0px;
-//   position: absolute;
-//   top: 85%;
-//   right: 30%;
-// }
 
 .btn:link,
 .btn:visited {
