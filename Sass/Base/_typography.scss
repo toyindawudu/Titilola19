@@ -1,0 +1,27 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  // font-size: 2rem;
+  line-height: 1.7;
+  color: $color-dark-grey;
+  padding: 3rem; // this equates to 30px
+}
+
+
+
+.heading-primary--main {
+  display: block;
+  font-weight: 500;
+  font-size: 6rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+}
+
+.heading-primary--sub {
+  display:block;
+  font-size: 2.5rem;
+
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
