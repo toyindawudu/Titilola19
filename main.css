@@ -102,6 +102,10 @@ body {
           box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -113,7 +117,7 @@ body {
 .heading-primary--main {
   display: block;
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 8rem;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 3s;
@@ -122,11 +126,35 @@ body {
 
 .heading-primary--sub {
   display: block;
-  font-size: 2.5rem;
+  font-size: 4rem;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+}
+
+.heading-secondary--main {
+  display: block;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.heading-secondary--sub {
+  display: block;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 3rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 5rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
 }
 
 .btn:link,
@@ -158,6 +186,7 @@ body {
   color: #e3e3e3;
   padding: 10px 30px;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 .btn::after {
@@ -191,6 +220,35 @@ body {
           animation-fill-mode: backwards;
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.feature-box__icon {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.feature-box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.12);
+          transform: translateY(-1.5rem) scale(1.12);
+}
+
+.feature-box__text {
+  text-align: left;
+}
+
 .header {
   height: 95vh;
   background-image: url(../Images/1.jpg);
@@ -199,25 +257,86 @@ body {
   position: relative;
   color: #fff;
   border: solid .1rem black;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 }
 
 .header__text-box {
   position: absolute;
   top: 20%;
+  right: 50%;
   bottom: 50%;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
   text-align: center;
 }
 
-main .row {
+.row {
   max-width: 114rem;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+
+.row .col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem));
+}
+
+.section-features {
+  margin-top: -25vh;
+  padding-bottom: 15rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(119, 119, 119, 0.8)), to(rgba(255, 255, 255, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+.section-features__text-box h1 {
+  padding-top: 250px;
+  font-size: 10rem;
+  margin-left: 12rem;
+  color: #fff;
   text-align: center;
 }
 
-section .section-about {
-  background-color: #000;
-  padding: 25rem;
-  height: 150vh;
+.section-features__text-box h3 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-left: 12rem;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

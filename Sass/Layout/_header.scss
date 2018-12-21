@@ -12,11 +12,12 @@
   color: $color-white;
   border: solid .1rem black;
 
-  // clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 
   &__text-box {
     position: absolute;
     top: 20%;
+    right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
     text-align: center;
