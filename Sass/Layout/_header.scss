@@ -10,8 +10,6 @@
   background-position: top;
   position: relative;
   color: $color-white;
-  border: solid .1rem black;
-
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 
   &__text-box {
