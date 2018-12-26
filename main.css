@@ -117,7 +117,7 @@ body {
 .heading-primary--main {
   display: block;
   font-weight: 500;
-  font-size: 8rem;
+  font-size: 6rem;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 3s;
@@ -126,7 +126,7 @@ body {
 
 .heading-primary--sub {
   display: block;
-  font-size: 4rem;
+  font-size: 3.5rem;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
   -webkit-animation-duration: 3s;
@@ -182,7 +182,7 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
+  background-color: #eee;
   color: #000;
   padding: 10px 30px;
   display: inline-block;
@@ -251,22 +251,31 @@ body {
 
 .header {
   height: 95vh;
-  background-image: url(../Images/1.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  color: #fff;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  /* linear-gradient(
+    to right bottom,
+    $color-dark-grey (0.3), 
+    $color-white (0.8)), */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__text-box {
-  position: absolute;
-  top: 20%;
-  right: 50%;
-  bottom: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  text-align: center;
+}
+
+.header__image img {
+  width: 68.5rem;
+  height: auto;
+  color: #fff;
+}
+
+.header__welcome {
+  width: calc(100% - 70rem);
+  border: 1px solid red;
+  padding: 15rem 0;
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -365,14 +374,13 @@ body {
 }
 
 .section-features {
-  margin-top: -25vh;
   padding-bottom: 15rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(119, 119, 119, 0.8)), to(rgba(255, 255, 255, 0.8)));
   background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.8), rgba(255, 255, 255, 0.8));
 }
 
 .section-features__text-box h1 {
-  padding-top: 250px;
+  padding-top: 50px;
   font-size: 10rem;
   margin-left: 12rem;
   color: #fff;
