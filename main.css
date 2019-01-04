@@ -288,10 +288,12 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 6rem;
+  right: 6rem;
   border-radius: 50%;
   z-index: 2000;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
 }
 
 .navigation__background {
@@ -303,17 +305,22 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#777, #f7f7f7);
   z-index: 1000;
-  -webkit-transform: scale(80);
-          transform: scale(80);
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
 }
 
 .navigation__nav {
   height: 100vh;
-  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1500;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 .navigation__list {
@@ -331,6 +338,7 @@ body {
 }
 
 .navigation__link:link, .navigation__link:visited {
+  display: inline-block;
   font-size: 3rem;
   font-weight: 400;
   padding: 1rem 2rem;
@@ -346,6 +354,18 @@ body {
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #777;
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(80);
+          transform: scale(80);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
 }
 
 .row {
