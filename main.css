@@ -117,7 +117,7 @@ body {
 .heading-primary--main {
   display: block;
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 9rem;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 3s;
@@ -251,10 +251,6 @@ body {
 
 .header {
   height: 95vh;
-  /* linear-gradient(
-    to right bottom,
-    $color-dark-grey (0.3), 
-    $color-white (0.8)), */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +270,7 @@ body {
   width: calc(100% - 70rem);
   border: 1px solid red;
   padding: 15rem 0;
-  width: 500px;
+  width: 700px;
   margin: 0 auto;
   text-align: center;
 }
