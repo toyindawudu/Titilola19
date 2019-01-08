@@ -115,9 +115,10 @@ body {
 }
 
 .heading-primary--main {
+  margin-top: 12rem;
   display: block;
   font-weight: 900;
-  font-size: 20rem;
+  font-size: 18rem;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 3s;
@@ -281,6 +282,7 @@ body {
   top: 0;
   left: 40%;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .navigation__checkbox {
