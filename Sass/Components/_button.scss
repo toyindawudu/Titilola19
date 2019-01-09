@@ -2,7 +2,6 @@
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  border-radius:50px;
   transition: all .2s;
   position: relative;
 }
@@ -20,7 +19,7 @@
 .btn--white {
   background-color: $color-light-grey-2;
   color: $color-black;
-  padding:10px 30px;
+  padding:30px 30px;
   display: inline-block;
   font-size: 1.6rem;
 }
