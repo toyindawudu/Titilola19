@@ -159,7 +159,7 @@ body {
 }
 
 .full-page {
-  height: 120vh;
+  height: 110vh;
 }
 
 .btn:link,
@@ -168,7 +168,6 @@ body {
   text-decoration: none;
   -webkit-transition: all .2s;
   transition: all .2s;
-  position: relative;
 }
 
 .btn:hover {
@@ -222,6 +221,14 @@ body {
           animation: moveInBottom .5s ease-out .75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.btn-abouttext {
+  position: absolute;
+  top: 195%;
+  left: 43%;
+  width: 15%;
+  text-align: center;
 }
 
 .feature-box {
