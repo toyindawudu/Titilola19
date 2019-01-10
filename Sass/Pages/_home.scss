@@ -25,11 +25,37 @@
 }
 
 .section-about {
-  
+
   &__text {
     width: $grid-width;
     font-size: 2.3rem;
     margin: 0 auto 0;
+  }
+}
+
+.services {
+  background: url(/Images/2.jpg) no-repeat center center fixed;
+  height:100vh;
+  margin: 0px auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__talents {
+    font-size: 12rem;
+    width: 80%;
+    border: solid 13px white;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__talents:hover {
+    background-color: $color-dark-grey;
+    color: $color-white;
+    transition: all .2s;
+    cursor: pointer;
   }
 
 }
